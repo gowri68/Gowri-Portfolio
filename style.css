@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #160824, #321052, #8b1e68);
+    color:white;
+    min-height: 100vh;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #ff8de1;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    color: #f0d9ff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: rgba(22, 8, 36, 0.9);
+    border-bottom: 1px solid #ff8de1;
+}
+
+.logo {
+    color: #ff8de1;
+    font-size: 26px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    color: #ff8de1;
+}
+#about {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(20, 10, 50, 0.7);
+    border-radius: 15px;
+    text-align: center;
+}
+
+#about h2 {
+    color: #ff8de1;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+/* Black and Pink Professional Theme */
+
+body {
+    background: linear-gradient(135deg, #090909, #1a0a14, #000000);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background: #080808;
+    border-bottom: 2px solid #ff69b4;
+}
+
+.navbar a:hover {
+    color: #ff69b4;
+}
+
+h1, h2, h3 {
+    color: #ff69b4;
+}
+
+#about {
+    background: rgba(20, 10, 16, 0.9);
+    border: 1px solid #ff69b4;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px auto;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ff69b4;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+}
+
+button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff1493;
+}
+/* Education Section */
+#education {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(20, 10, 50, 0.7);
+    border-radius: 15px;
+    text-align: center;
+}
+
+#education h2 {
+    color: #ff8de1;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#education .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#education .card:hover {
+    transform: translateY(-5px);
+}
+
+#education .card h3 {
+    color: #ff8de1;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#education .card p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+}
+/* Skills Section */
+#skills {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(20, 10, 50, 0.7);
+    border-radius: 15px;
+    text-align: center;
+}
+
+#skills h2 {
+    color: #ff8de1;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#skills .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 141, 225, 0.4);
+    transition: transform 0.3s ease;
+}
+
+#skills .card:hover {
+    transform: translateY(-5px);
+}
+
+#skills .card h3 {
+    color: #ff8de1;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#skills .card p {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+/* Projects Section */
+#projects {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(20, 10, 50, 0.7);
+    border-radius: 15px;
+    text-align: center;
+}
+
+#projects h2 {
+    color: #ff8de1;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#projects .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 141, 225, 0.4);
+    transition: transform 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: translateY(-5px);
+}
+
+#projects .card h3 {
+    color: #ff8de1;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#projects .card p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.8;
+}
+/* Contact Section */
+#contact {
+    background-color: #0a0a0a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#contact h2 {
+    color: #ff4da6;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#contact .card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #171717;
+    border: 1px solid #ff4da6;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 77, 166, 0.15);
+}
+
+#contact .card p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+#contact .card strong {
+    color: #ff4da6;
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#contact a:hover {
+    color: #ff4da6;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #050505;
+    color: #ff4da6;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ff4da6;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
