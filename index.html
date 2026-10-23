@@ -1,135 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gowri | My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090713">
+  <title>Gowri | Creative Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-    <nav class="navbar">
-    <h2 class="logo">GOWRI</h2>
+  <div class="progress-bar" id="progressBar"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="background-orb orb-one"></div>
+  <div class="background-orb orb-two"></div>
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-<img src="images/gowri.jpg" alt="Gowri's Profile Photo" class="profile-photo">
+  <header class="navbar">
+    <a class="logo" href="#home">G<span>.</span></a>
 
-    <h1>Hi, I'm Gowri! </h1>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
 
-    <h2>Welcome to My Portfolio</h2>
+    <nav id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
 
-    <p>I am a Computer Science student.</p>
-    <!-- About Section -->
-<section id="about">
-    <h2>About Me</h2>
+    <a href="#contact" class="nav-cta">Let's Connect ↗</a>
+  </header>
 
-    <p>
-        Hi! I am Gowri, a Computer Science student.
-        I am interested in learning new technologies
-        and developing my skills.
-    </p>
-</section>
-<section id="education" class="section">
-    <h2>My Education</h2>
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content reveal">
+        <div class="availability">
+          <span class="live-dot"></span>
+          COMPUTER SCIENCE STUDENT
+        </div>
 
-    <div class="education-card">
-        <h3>B.Sc Computer Science</h3>
-        <p>Currently Pursuing</p>
-        <p>Learning programming and web development.</p>
-    </div>
-</section>
-<!-- Skills Section -->
-<section id="skills" class="section">
-    <h2>My Skills</h2>
+        <p class="eyebrow">HELLO, WORLD! I'M</p>
 
-    <div class="card">
-        <h3>Technical Skills</h3>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>Java Basics</p>
-        <p>Python Basics</p>
-    </div>
+        <h1 class="hero-title">
+          <span id="animatedName">Gowri</span>
+          <span class="gradient-text">Mohanraj.</span>
+        </h1>
 
-    <div class="card">
-        <h3>Personal Skills</h3>
-        <p>Communication</p>
-        <p>Teamwork</p>
-        <p>Problem Solving</p>
-    </div>
-</section>
-<!-- Projects Section -->
-<section id="projects" class="section">
-    <h2>My Projects</h2>
+        <h2 class="hero-subtitle">
+          I explore <span id="changingWord">Web Development</span><span class="typing-cursor">|</span>
+        </h2>
 
-    <div class="card">
-        <h3>Personal Portfolio Website</h3>
-        <p>
-            Created a personal portfolio website using HTML and CSS
-            to showcase my profile, education, skills and projects.
-        </p>
-        <p><strong>Technologies:</strong> HTML, CSS</p>
-    </div>
-
-    <div class="card">
-        <h3>Credit Card Billing and Payment Reminder System</h3>
-        <p>
-            Developed a Java application to manage credit card billing,
-            payment records and payment reminders.
-        </p>
-        <p><strong>Technologies:</strong> Java, OOP, File Handling</p>
-    </div>
-</section>
-<!-- Contact Section -->
-<section id="contact" class="section">
-
-    <h2>Contact Me</h2>
-
-    <div class="card">
-
-        <p>I'd love to hear from you!</p>
-
-        <!-- Email -->
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:gowrimohanraj05@gmail.com">
-                gowrimohanraj05@gmail.com
-            </a>
+        <p class="hero-description">
+          A curious Computer Science student passionate about learning,
+          exploring creative ideas and building meaningful digital experiences.
         </p>
 
-        <!-- Phone -->
-        <p>
-            <strong>Phone:</strong>
-            <a href="tel:9994714221">
-                9994714221
-            </a>
-        </p>
+        <div class="hero-buttons">
+          <a class="primary-btn" href="#projects">Explore My Work <span>↗</span></a>
+          <a class="secondary-btn" href="#about">Discover More ↓</a>
+        </div>
 
-        <!-- GitHub -->
-        <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/gowri68"
-               target="_blank"
-               rel="noopener noreferrer">
-                Visit My GitHub
-            </a>
-        </p>
+        <div class="hero-socials">
+          <span>LET'S CONNECT</span>
+          <a href="mailto:gowrimohanraj05@gmail.com" aria-label="Email">✉</a>
+          <a href="#contact" aria-label="Contact">↗</a>
+        </div>
+      </div>
 
-    </div>
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-outer"></div>
+        <div class="orbit orbit-inner"></div>
 
-</section>
+        <button class="profile-card" id="profileCard" aria-expanded="false"
+          aria-label="Tap to reveal profile details">
+          <img src="images/gowri.jpg" alt="Gowri's profile photo"
+            onerror="this.style.display='none';document.getElementById('photoFallback').style.display='flex';">
 
-<!-- Footer -->
-<footer>
-    <p>© 2026 Gowri | My Portfolio</p>
-</footer>
-<script src="script.js"></script>
+          <span class="photo-fallback" id="photoFallback">G</span>
 
+          <span class="profile-hint" id="profileHint">✦ TAP TO DISCOVER</span>
+        </button>
+
+        <div class="profile-popover" id="profilePopover" aria-hidden="true">
+          <span class="mini-label">A LITTLE ABOUT ME</span>
+          <h3>Learning. Creating. Growing.</h3>
+          <p>Currently pursuing B.Sc. Computer Science and exploring the world of technology.</p>
+          <a href="#about">Know my story ↗</a>
+        </div>
+
+        <div class="floating-chip chip-top"><span>✦</span> Creative Mind</div>
+        <div class="floating-chip chip-bottom"><span>⌘</span> CS Student</div>
+        <div class="spark spark-one">✦</div>
+        <div class="spark spark-two">✧</div>
+      </div>
+
+      <a class="scroll-indicator" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>A little more <span class="gradient-text">about me.</span></h2>
+        <p>Every click reveals another part of my journey.</p>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-tabs reveal">
+          <button class="about-tab active" data-tab="story">01 <span>My Story</span> ↗</button>
+          <button class="about-tab" data-tab="education">02 <span>Education</span> ↗</button>
+          <button class="about-tab" data-tab="goals">03 <span>My Goals</span> ↗</button>
+        </div>
+
+        <div class="about-panel reveal" id="aboutPanel" aria-live="polite">
+          <div class="panel-icon">✳</div>
+          <p class="mini-label">MY STORY</p>
+          <h3>Curiosity is where my journey begins.</h3>
+          <p>I'm a B.Sc. Computer Science student who enjoys discovering how technology works. I like exploring web design, learning new skills and turning ideas into simple, useful digital experiences.</p>
+          <div class="panel-tags"><span>Curiosity</span><span>Creativity</span><span>Learning</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WHAT I'M EXPLORING</p>
+        <h2>Skills in <span class="gradient-text">progress.</span></h2>
+        <p>Tap any card to discover more.</p>
+      </div>
+
+      <div class="skills-grid">
+        <button class="skill-card reveal" data-skill="Java">
+          <span class="skill-icon">☕</span>
+          <span class="skill-name">Java</span>
+          <span class="skill-caption">Programming</span>
+          <span class="skill-more">Explore ↗</span>
+          <span class="skill-detail">Learning programming fundamentals and object-oriented concepts.</span>
+        </button>
+
+        <button class="skill-card reveal" data-skill="Python">
+          <span class="skill-icon">⌘</span>
+          <span class="skill-name">Python</span>
+          <span class="skill-caption">Programming</span>
+          <span class="skill-more">Explore ↗</span>
+          <span class="skill-detail">Building a foundation in Python syntax, logic and problem-solving.</span>
+        </button>
+
+        <button class="skill-card reveal" data-skill="HTML">
+          <span class="skill-icon">◇</span>
+          <span class="skill-name">HTML</span>
+          <span class="skill-caption">Web Structure</span>
+          <span class="skill-more">Explore ↗</span>
+          <span class="skill-detail">Creating structured and accessible pages for the web.</span>
+        </button>
+
+        <button class="skill-card reveal" data-skill="CSS">
+          <span class="skill-icon">✳</span>
+          <span class="skill-name">CSS</span>
+          <span class="skill-caption">Web Design</span>
+          <span class="skill-more">Explore ↗</span>
+          <span class="skill-detail">Exploring responsive layouts, gradients, transitions and animations.</span>
+        </button>
+
+        <button class="skill-card reveal" data-skill="JavaScript">
+          <span class="skill-icon">✦</span>
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-caption">Interactivity</span>
+          <span class="skill-more">Explore ↗</span>
+          <span class="skill-detail">Learning to make websites dynamic with events and interactive elements.</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY WORKSPACE</p>
+        <h2>Ideas into <span class="gradient-text">projects.</span></h2>
+        <p>Open a project card to read its details.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-number">PROJECT / 01</span>
+            <span class="project-symbol">⌘</span>
+          </div>
+          <div class="project-art art-purple"><span>JAVA</span><span class="art-orbit">✳</span></div>
+          <p class="mini-label">ACADEMIC PROJECT</p>
+          <h3>Java Mini Project</h3>
+          <p class="project-summary">A project created to apply programming concepts and logical thinking.</p>
+          <button class="details-btn" aria-expanded="false">View details <span>＋</span></button>
+          <div class="project-details">
+            <p><strong>Objective:</strong> Practise Java concepts and organise program logic.</p>
+            <p><strong>Technology:</strong> Java</p>
+            <p><strong>Note:</strong> Replace this sample card with your actual project title and features before publishing.</p>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-number">PROJECT / 02</span>
+            <span class="project-symbol">✧</span>
+          </div>
+          <div class="project-art art-pink"><span>WEB</span><span class="art-orbit">✦</span></div>
+          <p class="mini-label">PERSONAL PROJECT</p>
+          <h3>Interactive Portfolio</h3>
+          <p class="project-summary">A personal website showcasing my background, skills and learning journey.</p>
+          <button class="details-btn" aria-expanded="false">View details <span>＋</span></button>
+          <div class="project-details">
+            <p><strong>Objective:</strong> Present my profile in a creative and accessible format.</p>
+            <p><strong>Technology:</strong> HTML, CSS and JavaScript</p>
+            <p><strong>Features:</strong> Animated headings, interactive cards and responsive design.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-box reveal">
+        <p class="eyebrow">HAVE A QUESTION?</p>
+        <h2>Let's create something <span class="gradient-text">meaningful.</span></h2>
+        <p>Interested in connecting or discussing a project? Tap the card below.</p>
+
+        <button class="contact-reveal" id="contactReveal" aria-expanded="false">
+          <span class="contact-symbol">✉</span>
+          <span class="contact-main">
+            <span class="mini-label">SEND ME AN EMAIL</span>
+            <strong>Let's talk!</strong>
+          </span>
+          <span class="contact-arrow">↗</span>
+        </button>
+
+        <div class="contact-details" id="contactDetails" aria-hidden="true">
+          <p>Email address</p>
+          <strong id="emailText">gowrimohanraj05@gmail.com</strong>
+          <div class="contact-actions">
+            <button id="copyEmail" class="secondary-btn">Copy email</button>
+            <a class="primary-btn" href="mailto:gowrimohanraj05@gmail.com">Write an email ↗</a>
+          </div>
+          <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+        </div>
+      </div>
+      <p class="closing-line">Thanks for stopping by <span>✦</span></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#home">G<span>.</span></a>
+    <p>Designed with curiosity & creativity.</p>
+    <p>© <span id="currentYear"></span> Gowri</p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
 </body>
 </html>
